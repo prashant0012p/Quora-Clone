@@ -1,4 +1,5 @@
 import React from "react";
+import IntrestComp from "../components/IntrestComp";
 
 
 export default function Follow() {
@@ -6,7 +7,32 @@ export default function Follow() {
     return (
 
 
-        <h1>Following</h1>
+    
+        <div className="home">
+    
+        <div className="left">
+          
+    
+       
+        <IntrestComp/>    
+               
+          
+        </div>
+    
+    
+    
+        <div className="middle">
+          
+   
+    
+        </div>
+    
+        <div className="right">
+       
+        </div>
+      
+    
+        </div>
 
 
     )

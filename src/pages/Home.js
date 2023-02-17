@@ -1,26 +1,44 @@
-
-import Follow from "./Follow";
-import Answer from "./Answer";
-
-import Notify from "./Notify";
+import "../page-css/home.css";
 
 
+import React from "react";
 
-import React  from "react";
+import Header from "../components/Header";
+import IntrestComp from "../components/IntrestComp";
+import PostComp from "../components/PostComp";
 
-export default function Home(){
+export default function Home() {
+  return (
+  
+    <div className="home">
+    
+    <div className="left">
+      
 
-return(
+   
+    <IntrestComp/>            
 
-<>
-<h1>home</h1>
-
-<div className="flex" style={{display:"flex"}}>
-     <div><Follow/></div>      
-     <div><Notify/></div>
-     <div><Answer/></div>  
+           
+      
     </div>
 
-</>
-)
+
+
+    <div className="middle">
+      
+      <Header/>
+      <PostComp/>
+     
+
+    </div>
+
+    <div className="right">
+  
+    </div>
+  
+
+    </div>
+
+
+  );
 }

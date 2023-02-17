@@ -1,10 +1,14 @@
 .navbar{
 /* 
 background-color: cadetblue;     */
+position: fixed;
+top:0;
 width: 100%;
-height: 3rem;
+height: 4rem;
 display: flex;
 justify-content: center;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+background-color: #ffff;
 
 }
 .mid{
@@ -30,6 +34,7 @@ justify-content: center;
 width: 90%;
 height: 50%;
 
+
 }
 .mid > .iconcontent{
 
@@ -38,16 +43,14 @@ height: 50%;
  display: flex;
 
 }
-.mid > .iconcontent > div{
-    /* background-color: snow; */
-    /* border: 1px solid darkblue; */
-}
+
 .mid > .iconcontent > .iconbox{
     width: 30%;
     display: flex;
     justify-content: space-around;
-    font-size: 1.5rem;
-    color: gray;
+    font-size: 1.3rem;
+   
+    /* background-color: yellowgreen; */
     font-weight:lighter;
     
     align-items: center;
@@ -64,14 +67,33 @@ height: 50%;
 height: 2rem;    
 width: 100%;
 /* background-color: springgreen; */
-border: 1px solid grey  ;
+border: 1px solid rgba(128, 128, 128, 0.37)  ;
 display: flex;
 justify-content: center;
 align-items: center;
 
 }
+.red{
+  color: #A82723;
+  border-bottom: 1px solid #A82723;
+
+}
+.red :hover{
+    background-color: antiquewhite;
+     
+   
+}
+.gray{
+    color: rgba(70, 65, 65, 0.897);;
+}
+.gray:hover{
+    background-color: antiquewhite;
+}
+
+
 
 .sicon{
+
 
 height: 100%;    
 width: 10%;    
@@ -80,6 +102,14 @@ align-items: center;
 justify-content: center;
 
 }
+
+.sicon > i{
+
+    color: gray;
+
+
+}
+
 .ibox{
 
 height: 100%;  
@@ -98,7 +128,7 @@ align-items: center;
 
 .mid > .iconcontent > .profilebox{
     width: 35%;
-
+    /* background-color: wheat; */
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -106,9 +136,9 @@ align-items: center;
 
 .mid > .iconcontent > .profilebox  > div{
 
-/* border: 1px solid saddlebrown;     */
+    /* border: 1px solid saddlebrown;     */
 /* background-color: teal; */
-height: 70%;
+height: 80%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -117,21 +147,25 @@ justify-content: center;
 
     .mid > .iconcontent > .profilebox > .b1,.b4{
 
-    width: 35%;
+    width: 45%;
         
 
     }
 .b1 > button {
 
-background-color:floralwhite;    
+background-color:#ffff;    
 border: 1px solid gray;   
-
+color: gray;
+padding: 10px;
+display: flex;
+align-items: center;
 height: 80%;
 border-radius: 10px;
    
 }
 .b4 > button {
 
+font-weight: 600;  
 background-color: #A82723;
 color: whitesmoke;    
 border: none;
@@ -158,3 +192,54 @@ border-radius: 10px;
  width: 10%;   
 
 }   
+.dropdown-menu{
+
+width: 300px;
+height: 80vh;
+overflow-y: scroll;
+position:absolute;
+
+}
+.one{
+    /* background-color:darkblue; */
+    padding: 10px;
+}
+.two{
+    /* background-color: blue; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Link{
+   /* background-color: yellowgreen; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-decoration: none;
+   color: rgb(49, 45, 45);
+   /* border: 1px solid saddlebrown; */
+   height: 2rem;
+}
+.Linkh{
+    text-decoration: none;
+    color: rgb(49, 45, 45);
+}
+.Link > .s1{
+/* 
+  border: 1px solid saddlebrown;   */
+  width: 10%;
+
+}
+.Link > .s2{
+
+  /* border: 1px solid darkblue;   */
+  width: 90%; 
+
+
+}
+
+.three{
+    /* background-color: aqua; */
+    padding: 10px;
+}

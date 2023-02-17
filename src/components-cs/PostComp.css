@@ -1,0 +1,110 @@
+.PostMain{
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+    /* background-color: blue; */
+}
+.PostCard{
+
+background-color: #ffff;    
+height: 80vh;
+/* border: 1px solid firebrick; */
+margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+.PostCard > .P1 {
+
+height: 10%;
+/* background-color: aquamarine; */
+display: flex;
+
+}
+
+
+.P1 > .P11{
+
+width: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.P11 > img{
+    width: 60%;
+    height: 70%;
+    border-radius: 50%;
+}
+.P1  > .P12{
+
+width: 90%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.P12 > div{
+
+width: 100%;
+padding-left: 1rem;    
+/* border: 1px solid saddlebrown; */
+
+}
+
+.PostCard > .P2 {
+
+height: 30%;
+/* background-color: blueviolet; */
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.PostCard > .P3{
+
+height: 52%; 
+/* background-color: brown;    */
+
+}
+
+.P3 > img{
+
+height: 100%;
+width: 100%;
+
+}
+
+.PostCard > .P4{
+
+
+height: 8%;
+/* background-color: rgb(85, 41, 41); */
+display: flex;
+justify-content: flex-start;
+
+align-items: center;
+
+}
+.P4 > div{
+    margin-left: 1rem;
+}
+.P4 > .P4B > button {
+
+border: none;
+
+
+}
+.P4B1{
+
+border-top-left-radius: 10px;    
+border-bottom-left-radius: 10px;
+
+}
+.P4B2{
+
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}

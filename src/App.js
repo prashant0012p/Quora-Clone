@@ -8,6 +8,7 @@ import Spaces from "./pages/Spaces";
 import Notify from "./pages/Notify";
 import Error  from "./pages/Error";
 import {Routes,Route} from "react-router-dom"
+import IntrestDetail from "./pages/IntrestDetail";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Route path="/answer" element={<Answer/>}/>
       <Route path="/notify" element={<Notify/>}/>
       <Route path="/spaces" element={<Spaces/>}/>
+      <Route path="/intrestdetail/:id" element={<IntrestDetail/>} ></Route>
       <Route path="*" element={<Error/>}/>
 
      </Routes>
