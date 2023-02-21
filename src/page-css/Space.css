@@ -1,0 +1,79 @@
+.DS{
+
+background-color: rgb(235, 247, 241);
+width: 100%;    
+padding-left: 10px;
+
+}
+
+.DisSpace{
+/* 
+background-color: cadetblue; */
+display: grid;
+width: 100%;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 10px;
+padding: 10px;
+
+
+
+}
+.DisSpace > .DisCard{
+
+/* background-color: tomato ; */
+width: 100%;
+height: 40vh;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+
+.DisCard > .Dis1 {
+
+height: 30%;
+
+}
+.Dis1 > img{
+
+width: 100%;
+height: 100%;
+border-top-left-radius: 1rem;
+border-top-right-radius: 1rem;
+
+
+}
+
+.DisCard > .Dis2 {
+
+height: 70%;    
+
+}
+
+.Dis2 > .Dis21{
+
+height: 20%;
+text-align: center;
+
+}
+.Dis2 > .Dis22{
+
+height:80%;
+text-align: center;
+
+}
+.Dis22 > p {
+
+font-size: 12px;
+
+}
+@media only screen and (max-width: 600px) {
+
+
+.DisSpace{
+
+grid-template-columns: 1fr 1fr;
+
+}
+
+}

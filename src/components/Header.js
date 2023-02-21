@@ -1,10 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../components-cs/header.css";
+import PostModal from "./PostModal";
 
 export default function Header() {
+
+
   return (
+
+     
+
     <div className="header">
+
+     <PostModal/>
+
       <div className="headerSearch">
 
         <div className="head1">
@@ -22,7 +31,8 @@ export default function Header() {
       </div>
 
       <div className="postsection">
-        <div>
+
+        <div data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
         <i className="fa-solid fa-question mx-2"></i>  
           <NavLink className={"Linkh"}>Ask</NavLink>
         </div>
@@ -32,10 +42,11 @@ export default function Header() {
           <NavLink className={"Linkh"} >Answer</NavLink>
         </div>
 
-        <div style={{border:"none"}}>
+        <div style={{border:"none"}} data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <i className="fa-solid fa-pencil mx-2"></i>
           <NavLink className={"Linkh"} >Post</NavLink>
         </div>
+
       </div>
     </div>
   );

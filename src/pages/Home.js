@@ -7,32 +7,39 @@ import Header from "../components/Header";
 import IntrestComp from "../components/IntrestComp";
 import PostComp from "../components/PostComp";
 
+
 export default function Home() {
+
+
+
   return (
   
-    <div className="home">
+    <div className="home" id="homei">
     
-    <div className="left">
+    <div className="left" id="lefti">
       
 
    
     <IntrestComp/>            
-
+  
            
       
     </div>
 
 
 
-    <div className="middle">
+    <div className="middle" id="middlei">
       
       <Header/>
-      <PostComp/>
+      
      
+      <PostComp/>
+      
+      
 
     </div>
 
-    <div className="right">
+    <div className="right" id="righti">
   
     </div>
   

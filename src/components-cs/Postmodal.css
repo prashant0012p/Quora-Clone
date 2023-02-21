@@ -1,0 +1,14 @@
+.modal-body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.modal-body > div{
+    border: 1px solid black ;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1rem;
+}

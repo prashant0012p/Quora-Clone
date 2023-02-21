@@ -10,8 +10,7 @@ background-color: #ffff;
 height: 80vh;
 /* border: 1px solid firebrick; */
 margin-bottom: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
+            
 }
 .PostCard > .P1 {
 
@@ -59,7 +58,7 @@ height: 30%;
 /* background-color: blueviolet; */
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: start;
 
 }
 .PostCard > .P3{
@@ -106,5 +105,21 @@ border-bottom-left-radius: 10px;
 
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .P3 > img{
+        
+        height: 80%;
+        width: 100% ;
+
+    }
+    .P2{
+
+    font-size: 12px;
+
+    }
 
 }

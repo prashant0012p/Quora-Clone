@@ -1,10 +1,11 @@
 import React from "react";
+import Question from "../components/Question";
 import "../page-css/Answer.css"
 
 export default function Answer() {
   return (
-    <div className="home">
-      <div className="left">
+    <div className="home" id="homei">
+      <div className="left" id="lefti">
 
         <div className="Questions">
          
@@ -23,9 +24,9 @@ export default function Answer() {
 
       </div>
 
-      <div className="middle"></div>
+      <div className="middle" id="middlei"><Question/></div>
 
-      <div className="right"></div>
+      <div className="right" id="righti"></div>
     </div>
   );
 }

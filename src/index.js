@@ -4,13 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom"
+import { ThemeValueProvider } from './CreateContext/Context';
+
+import { PostDataProvider } from './CreateContext/PostContext';
+import { QuestionDataProvider } from './CreateContext/QuestionContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(      
   <React.StrictMode>
+    <PostDataProvider>
+    <QuestionDataProvider> 
+    <ThemeValueProvider>
     <Router>
     <App />
     </Router>
+    </ThemeValueProvider>
+    </QuestionDataProvider>
+    </PostDataProvider>
   </React.StrictMode>
 );
 

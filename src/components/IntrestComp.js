@@ -17,6 +17,8 @@ export default function IntrestComp() {
         {Intrest.map((e) => {
  
        let url = `/intrestdetail/${e.id}`
+
+
           
        return(   <NavLink to={url} className="IntrestCard" key={e.id} >
             <div className="IntrestImgBox">

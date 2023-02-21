@@ -1,6 +1,6 @@
 .home{
-
-    /* background-color: turquoise; */
+/* 
+    background-color: turquoise; */
     height: 100%;
     
     margin-top: 5rem;
@@ -15,6 +15,7 @@
 
 .left{
     /* background-color: tomato; */
+    /* z-index: -1; */
     position: sticky;
     position: -webkit-sticky; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -39,10 +40,30 @@
 
 .right{
     /* background-color: blue; */
-    /* z-index: -1; */
+    z-index: -1;
     height: 50vh;
     /* width: 20%; */
     position: sticky;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     top: 5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+#lefti{
+    /* background-color: burlywood; */
+    display: none;
+}
+#righti{
+    /* background-color: violet; */
+    display: none;
+}
+#homei{
+
+grid-template-columns: 1fr;
+
+}
+
+
 }

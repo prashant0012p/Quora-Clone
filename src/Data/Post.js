@@ -1,17 +1,17 @@
 
 export const Post = [{
 
-Id:1,    
+Id: 1,
 Name:"Prashant Parmar",
 About:"Students",
 Profile:"https://www.pinkvilla.com/imageresize/robert_downey_jr_opens_up_on_playing_iron_man.jpg?width=752&t=pvorg",
 Post:'https://www.conserve-energy-future.com/wp-content/uploads/2016/08/nature-environment-conservation.jpg',
 Info:'Humans impact the physical environment in many ways: overpopulation, pollution, burning fossil fuels, and deforestation. Changes like these have triggered climate change, soil erosion, poor air quality, and undrinkable water. These negative impacts can affect human behavior and can prompt mass migrations or battles over clean water',
-Upvote:0
+Upvote:0    
 
 },{
 
-    Id:2,  
+    Id: 2,
     Name:"Jay D Parmar",
     About:"Content Writer",
     Profile:"https://nypost.com/wp-content/uploads/sites/2/2022/11/mark-zuckerberg-57.jpg?quality=75&strip=all&w=1024",
@@ -21,7 +21,7 @@ Upvote:0
 
 },{
 
-    Id:3,     
+ Id: 3,
  Name:"Tejas",
  About:"CEO of T-Conomic",
 Profile:"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -30,66 +30,5 @@ Info:'Economic analysis refers to evaluating costs and benefits to check the via
 Upvote:0
 
 
-},
-{
-
-    Id:4,     
- Name:"Prashant Parmar",
- About:"Students",
-Profile:"https://www.pinkvilla.com/imageresize/robert_downey_jr_opens_up_on_playing_iron_man.jpg?width=752&t=pvorg",
-Post:'https://www.conserve-energy-future.com/wp-content/uploads/2016/08/nature-environment-conservation.jpg',
-Info:'Humans impact the physical environment in many ways: overpopulation, pollution, burning fossil fuels, and deforestation. Changes like these have triggered climate change, soil erosion, poor air quality, and undrinkable water. These negative impacts can affect human behavior and can prompt mass migrations or battles over clean water',
-Upvote:0
-
-
-},
-{
-
-    Id:5,     
- Name:"Prashant Parmar",
- About:"Students",
-Profile:"https://www.pinkvilla.com/imageresize/robert_downey_jr_opens_up_on_playing_iron_man.jpg?width=752&t=pvorg",
-Post:'https://www.conserve-energy-future.com/wp-content/uploads/2016/08/nature-environment-conservation.jpg',
-Info:'Humans impact the physical environment in many ways: overpopulation, pollution, burning fossil fuels, and deforestation. Changes like these have triggered climate change, soil erosion, poor air quality, and undrinkable water. These negative impacts can affect human behavior and can prompt mass migrations or battles over clean water',
-Upvote:0
-
-
-},
-{
-
-    Id:6,     
- Name:"Prashant Parmar",
- About:"Students",
-Profile:"https://www.pinkvilla.com/imageresize/robert_downey_jr_opens_up_on_playing_iron_man.jpg?width=752&t=pvorg",
-Post:'https://www.conserve-energy-future.com/wp-content/uploads/2016/08/nature-environment-conservation.jpg',
-Info:'Humans impact the physical environment in many ways: overpopulation, pollution, burning fossil fuels, and deforestation. Changes like these have triggered climate change, soil erosion, poor air quality, and undrinkable water. These negative impacts can affect human behavior and can prompt mass migrations or battles over clean water',
-Upvote:0
-
-
-},
-{
-
-    Id:7,     
- Name:"Prashant Parmar",
- About:"Students",
-Profile:"https://www.pinkvilla.com/imageresize/robert_downey_jr_opens_up_on_playing_iron_man.jpg?width=752&t=pvorg",
-Post:'https://www.conserve-energy-future.com/wp-content/uploads/2016/08/nature-environment-conservation.jpg',
-Info:'Humans impact the physical environment in many ways: overpopulation, pollution, burning fossil fuels, and deforestation. Changes like these have triggered climate change, soil erosion, poor air quality, and undrinkable water. These negative impacts can affect human behavior and can prompt mass migrations or battles over clean water',
-Upvote:0
-
-
-},
-{
-
-    Id:8,     
- Name:"Prashant Parmar",
- About:"Students",
-Profile:"https://www.pinkvilla.com/imageresize/robert_downey_jr_opens_up_on_playing_iron_man.jpg?width=752&t=pvorg",
-Post:'https://www.conserve-energy-future.com/wp-content/uploads/2016/08/nature-environment-conservation.jpg',
-Info:'Humans impact the physical environment in many ways: overpopulation, pollution, burning fossil fuels, and deforestation. Changes like these have triggered climate change, soil erosion, poor air quality, and undrinkable water. These negative impacts can affect human behavior and can prompt mass migrations or battles over clean water',
-Upvote:0
-
-
 }
-
 ]
