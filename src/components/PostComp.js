@@ -3,7 +3,11 @@ import React from "react";
 import { usePostData } from "../CreateContext/PostContext";
 
 export default function PostComp() {
+
+  
   let { postData } = usePostData();
+
+ console.log(postData)
 
   return (
     <div className="PostMain">

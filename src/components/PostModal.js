@@ -1,10 +1,13 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../components-cs/Postmodal.css";
 import { usePostData } from "../CreateContext/PostContext";
 import { Post } from "../Data/Post";
+import { Question } from "../Data/Question";
+import { useQuestionData } from "../CreateContext/QuestionContext";
 
-export default function PostModal() { 
+export default function PostModal() {
   let { setPostData } = usePostData();
+  let { setQuestionData } = useQuestionData();
 
   let [inputName, setInputName] = useState("");
   let [inputAbout, setInputAbout] = useState("");
@@ -12,45 +15,62 @@ export default function PostModal() {
   let [inputPost, setInputPost] = useState("");
   let [inputInfo, setInputInfo] = useState("");
 
-   useEffect(() => {
-    var data = JSON.parse(localStorage.getItem("datapost"));
-    setPostData(data) 
-  }, [])     
+  let [iquestion, setQuestion] = useState("");
+
+  // useEffect(() => {
+  //   var data = JSON.parse(localStorage.getItem("datapost"));
+  //   setPostData(data);
+  // }, []);
 
   function createPost() {
+    if (!inputName || !inputAbout || !inputPost || !inputProfile) {
+      alert("Please fill");
+    } else {
+      let newObj = {
+        Id: new Date().getTime().toString(),
+        Name: inputName,
+        About: inputAbout,
+        Profile: inputProfile,
+        Post: inputPost,
+        Info: inputInfo,
+        Upvote: 0,
+      };
 
-  if(!inputName || !inputAbout || !inputPost || !inputProfile ){
+      let updateObj = [newObj, ...Post];
 
-   alert("Please fill")
+      setPostData(updateObj);
 
-  }
-  else{
+      localStorage.setItem("datapost", JSON.stringify(updateObj));
 
-    let newObj = {
-      Id: new Date().getTime().toString(),
-      Name: inputName,
-      About: inputAbout,
-      Profile: inputProfile,
-      Post: inputPost,
-      Info: inputInfo,
-      Upvote: 0,
-    };  
-
-    let updateObj = [newObj,...Post ];
-
-    setPostData(updateObj);         
-
-    localStorage.setItem("datapost", JSON.stringify(updateObj))
-
-    setInputName("")
-    setInputInfo("")
-    setInputAbout("")
-    setInputPost("")
-    setInputProfile("")
-
+      setInputName("");
+      setInputInfo("");
+      setInputAbout("");
+      setInputPost("");
+      setInputProfile("");
+    }
   }
 
+  function createQuestion() {
+    if (!iquestion) {
+      alert("ok");
+    } else {
+      let newObj = {
+        Id: new Date().getTime().toString(),
+        Ques: iquestion,
+        Ans: [
+          {
+            Profile: "",
+            Name: "",
+            About: "",
+            Answer: "",
+          },
+        ],
+      };
 
+      let updateObj = [newObj, ...Question];
+
+      setQuestionData(updateObj);
+    }
   }
 
   return (
@@ -131,12 +151,17 @@ export default function PostModal() {
             <div>
               <h3>Question</h3>
 
-              <input placeholder="Enter your Name" />
-              <input className="mt-3" placeholder="Enter your About" />
-              <input className="mt-3" placeholder="Enter your Profile" />
-              <input className="mt-3" placeholder="Enter your Question" />
+              <input
+                onChange={(e) => setQuestion(e.target.value)}
+                className="mt-3"
+                placeholder="Enter your Question"
+              />
 
-              <button type="button" className="btn btn-primary mt-3">
+              <button
+                onClick={createQuestion}
+                type="button"
+                className="btn btn-primary mt-3"
+              >
                 Submit
               </button>
             </div>
